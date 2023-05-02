@@ -1,0 +1,90 @@
+.about-me-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 114px;
+    width: 100%;
+    background: #141D2F;
+
+    .social-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    .green-line {
+        width: 120px;
+        height: 5px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #70E61C;
+    }
+
+    .personal-info-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .personal-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 140px;
+            width: 40%;
+
+            h1 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 77px;
+                color: #FFFF;
+            }
+
+            p {
+                color: #FFFF;
+                font-family: 'Poppins', sans-serif;
+                padding: 15px 0;
+            }
+
+        }
+    }
+
+    .overview-sheet {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 22px;
+
+        img {
+            width: 122px;
+            object-fit: contain;
+        }
+    }
+
+    .profile-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        .profile {
+            display: flex;
+            flex-direction: row;
+
+            img:first-child {
+                position: relative;
+                top: 135px;
+                left: 160px;
+                width: 517px;
+            }
+
+            img:last-child {
+                position: relative;
+                top: 81px;
+                left: -54px;
+            }
+        }
+    }
+}

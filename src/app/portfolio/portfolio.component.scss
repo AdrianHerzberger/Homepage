@@ -1,0 +1,89 @@
+.portfolio-box {
+    width: 100%;
+    background: #141D2F;
+    display: flex;
+    flex-direction: column;
+
+    .turquoise-shadow-alt {
+
+        position: absolute;
+        top: 2191px;
+        right: 0;
+        width: 471px;
+        object-fit: contain;
+
+    }
+
+    .green-shadow-alt {
+        position: absolute;
+        left: 0;
+        top: 3030px;
+    }
+
+    .portfolio-header {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+
+        h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 77px;
+            line-height: 120%;
+            color: white;
+        }
+    }
+
+    .portfolio-info {
+        width: 470px;
+        padding: 15px 0 0 100px;
+
+        font-family: "Poppins", sans-serif;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    .purple-line {
+        width: 80px;
+        height: 5px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #9747FF;
+    }
+
+    .portfolio-grid {
+        padding: 120px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .portfolio-grid>.box-style {
+        display: flex;
+        flex-basis: calc(25% - -150px);
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #70E61C;
+        border-radius: 20px;
+        margin: 10px;  
+    }
+
+    .img-aline {
+        position: relative;
+        top: 165px;
+        right: 0;
+        z-index: 5;
+    }
+
+    .box-style>.drop-shadow {
+        position: relative;
+        top: -201px;
+        z-index: 1;
+    }
+}

@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainSideComponent } from './main-side/main-side.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: MainSideComponent },
+  { path: '', component: AboutMeComponent },
+  { path: '', component: SkillsComponent },
+  { path: '', component: PortfolioComponent },
+  { path: '', component: ContactComponent },
+  { path: '', component: FooterComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

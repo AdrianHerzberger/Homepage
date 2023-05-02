@@ -1,0 +1,47 @@
+<section>
+    <div class="contact-box">
+        <div class="contact-header">
+            <h1>Contact</h1>
+            <div class="green-line"></div>
+        </div>
+        <div class="contact-socials">
+            <div class="contact-intro">
+                <div class="contact-header-inline">
+                    <div class="turquoise-line"></div>
+                    <h2>Got a problem to solve?</h2>
+                </div>
+                <div class="contact-info">
+                    <p>
+                        Contact me through this form, I am interested in hearing you, knowing your ideas and
+                        contributing to your
+                        projects with my work.
+                        <br>
+                        <br>
+                        Need a Frontend developer? Contact me!
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" formControlName="name" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" formControlName="email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <input type="text" formControlName="message" id="message" class="form-control-text">
+                    </div>
+                    <button type="submit" class="button-style">Send message :)</button>
+                </form>
+            </div>
+        </div>
+        <span class="material-symbols-rounded">
+            arrow_circle_up
+        </span>
+        <img class="purple-shadow-fot" src="./assets/img/purple_shadow_fot.png" alt="#">
+    </div>
+</section>
