@@ -77,21 +77,23 @@
         }
 
         .contact-form,
-        input {
+        input, textarea {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 60%;
+            z-index: 10;
 
-            label {
-                position: relative;
-                top: 37px;
-                left: 35px;
+            ::placeholder {
                 font-family: "Poppins";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 color: #FFFFFF;
+            }
+
+            .form-group {
+                padding: 15px 0;
             }
 
             .form-control {
@@ -100,6 +102,19 @@
                 background: #141D2F;
                 border: 1px solid #9747FF;
                 border-radius: 10px;
+                &:hover {
+                    border: 1px solid #1CDAE6;
+                    cursor: pointer;
+                }
+            }
+
+            ::ng-deep .form-control{
+                color: #FFFFFF;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                padding: 10px 15px;
             }
 
             .form-control-text {
@@ -108,7 +123,20 @@
                 background: #141D2F;
                 border: 1px solid #9747FF;
                 border-radius: 10px;
-                resize: both;
+                &:hover {
+                    border: 1px solid #1CDAE6;
+                    cursor: pointer;
+                }
+            }
+
+            ::ng-deep .form-control-text{
+                color: #FFFFFF;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                padding: 10px 15px;
+                resize: vertical;
             }
 
             .button-style {
@@ -153,11 +181,15 @@
         font-weight: lighter;
         z-index: 10;
         cursor: pointer;
+
+        &:hover {
+            color: #70E61C;
+        }
     }
 
     .purple-shadow-fot {
         position: absolute;
-        top: 4650px;
+        top: 4665px;
         right: 0;
         width: 615px;
         height: 546px;

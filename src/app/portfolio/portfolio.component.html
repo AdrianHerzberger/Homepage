@@ -19,9 +19,10 @@
                 <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
                 <div [class.join]="hovered === true"></div>
             </div>
-            <div class="box-style">
+            <div #crm class="box-style" (mouseenter)="over($event)" (mouseleave)="out($event)">
                 <div class="img-aline"><img src="./assets/img/crm.png" alt="#"></div>
                 <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
+                <div [class.crm]="hovered === true"></div>
             </div>
             <div class="box-style">
                 <div class="img-aline"><img src="./assets/img/pollo_loco.png" alt="#"></div>
