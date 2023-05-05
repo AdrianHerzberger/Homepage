@@ -5,13 +5,11 @@
     flex-direction: column;
 
     .turquoise-shadow-alt {
-
         position: absolute;
         top: 2468px;
         right: 0;
         width: 471px;
         object-fit: contain;
-
     }
 
     .green-shadow-alt {
@@ -52,69 +50,5 @@
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
         background-color: #9747FF;
-    }
-
-    .portfolio-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: 120px 0;
-    }
-
-    .portfolio-grid>.box-style {
-        display: flex;
-        flex-basis: calc(25% - -150px);
-        justify-content: center;
-        flex-direction: column;
-        width: 500px;
-        height: 500px;
-        border: 1px solid #70E61C;
-        border-radius: 20px;
-        overflow: hidden;
-        margin: 10px;
-    }
-    
-    .box-style>.img-aline {
-        position: relative;
-        top: 165px;
-        right: -15px;
-        z-index: 5;
-    }
-
-    .box-style>.drop-shadow {
-        position: relative;
-        top: -201px;
-        z-index: 1;
-    }
-
-    .zoom-into-view {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: rgba(20, 29, 47, 0.8);
-    }
-
-    .zoom-ani {
-        animation: zoom 2s linear ease-in;
-    }
-
-    @keyframes zoom {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1.2);
-        }
-    }
-
-    .box-style>.discribtion-box {
-        position: relative;
-        width: 500px;
-        height: 300px;
-        background-color: #FFFFFF;
     }
 }

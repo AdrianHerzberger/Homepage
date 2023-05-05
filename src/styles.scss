@@ -24,3 +24,139 @@
 .ml-32 {
     margin-left: 32px;
 }
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 120px 0;
+}
+
+.box-style {
+    display: flex;
+    flex-basis: calc(50% + -337px);
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid #70E61C;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.img-aline {
+    position: relative;
+    top: 165px;
+    z-index: 5;
+}
+
+.drop-shadow {
+    position: relative;
+    top: -200px;
+    z-index: 1;
+}
+
+.layer {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(20, 29, 47, 0.8);
+    height: 500px;
+    width: 614px;
+    z-index: 999;
+}
+
+.img-position {
+    position: relative;
+    top: 95px;
+}
+
+.zoom-ani {
+    transition: transform 300ms ease-in-out;
+}
+
+.button-aline {
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 74px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-turquoise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #FFFFFF;
+    width: 130px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #1CDAE6;
+    background-color: #70e61c00;
+}
+
+.button-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #FFFFFF;
+    width: 130px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background: #70E61C;
+}
+
+.discribtion-box {
+    position: relative;
+    bottom: 100px;
+    left: 0px;
+    width: 615px;
+    height: 245px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #9747FF;
+}
+
+.description-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.code-introduction {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #70E61C;
+}
