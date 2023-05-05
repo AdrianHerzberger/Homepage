@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +7,23 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
+  hovered = false;
+
+  zoomIntoView: string = /*html*/`
+    <div class="zoom-into-view">
+      <div class="zoom-ani">
+        <img src="./assets/img/pollo_loco_view.png" alt="#">
+      </div>
+      <div class="button-aline">
+        <button>Github</button>
+        <button>Live test</button>
+      </div>
+      <div class="discribtion-box">  
+      </div>
+    </div>
+  `;
+
+  constructor() {
 
   }
 
@@ -16,17 +32,19 @@ export class PortfolioComponent implements OnInit {
   }
 
   over(event: MouseEvent) {
-    const zoomView = this.elementRef.nativeElement.querySelector('#zoomView');
-    this.renderer.addClass(zoomView, 'zoom-into-view');
+    this.hovered = true;
+    const zoomView = (event.target as HTMLElement);
+    //zoomView.innerHTML = this.zoomIntoView;
   }
 
   out(event: MouseEvent) {
+    this.hovered = false;
     const zoomView = (event.target as HTMLElement);
-    zoomView.innerHTML = '';
-    zoomView.innerHTML += /*html*/`
+    //zoomView.innerHTML = '';
+    //zoomView.innerHTML += /*html*/`
       
      
-    `;
+//`;
   }
 
 }
