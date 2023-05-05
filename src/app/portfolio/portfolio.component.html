@@ -9,10 +9,22 @@
             <p>This page is a sample of my work - please feel free to try them out.</p>
         </div>
         <div class="portfolio-grid">
-            <div class="box-style"><div class="img-aline"><img src="./assets/img/pollo_loco.png" alt="#"></div><div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div></div>
-            <div class="box-style"><div class="img-aline"><img src="./assets/img/join.png" alt="#"></div><div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div></div>
-            <div class="box-style"><div class="img-aline"><img src="./assets/img/crm.png" alt="#"></div><div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div></div>
-            <div class="box-style"><div class="img-aline"><img src="./assets/img/pollo_loco.png" alt="#"></div><div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div></div>
+            <div id="zoomView" class="box-style" (mouseenter)="over($event)" (mouseleave)="out($event)">
+                <div class="img-aline"><img src="./assets/img/pollo_loco.png" alt="#"></div>
+                <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
+            </div>
+            <div class="box-style">
+                <div class="img-aline"><img src="./assets/img/join.png" alt="#"></div>
+                <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
+            </div>
+            <div class="box-style">
+                <div class="img-aline"><img src="./assets/img/crm.png" alt="#"></div>
+                <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
+            </div>
+            <div class="box-style">
+                <div class="img-aline"><img src="./assets/img/pollo_loco.png" alt="#"></div>
+                <div class="drop-shadow"><img src="./assets/img/drop_shadow.png" alt="#"></div>
+            </div>
         </div>
         <img class="green-shadow-alt" src="./assets/img/green_shadow_alt.png" alt="#">
     </div>

@@ -4,7 +4,7 @@
     row-gap: 114px;
     width: 100%;
     background: #141D2F;
-    padding: 125px 0 277px  0;
+    padding: 125px 0 277px 0;
 
     .contact-header {
         display: flex;
@@ -15,8 +15,8 @@
         text-align: center;
 
         .green-line {
-            width: 690px;
-            height: 5px;
+            width: 750px;
+            height: 3px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px;
             background-color: #70E61C;
@@ -45,7 +45,7 @@
 
             .turquoise-line {
                 width: 80px;
-                height: 5px;
+                height: 3px;
                 border-top-right-radius: 2px;
                 border-bottom-right-radius: 2px;
                 background-color: #9747FF;
@@ -114,7 +114,7 @@
             .button-style {
                 position: relative;
                 top: 35px;
-                left: 200px;
+                left: 210px;
                 background-color: #70E61C;
                 color: #FFFFFF;
                 font-size: 18px;
@@ -124,8 +124,21 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 400;
                 border-radius: 10px;
-                cursor: pointer;
                 z-index: 10;
+                cursor: pointer;
+                -webkit-transition: all 400ms ease-in-out;
+                -moz-transition: all 400ms ease-in-out;
+                transition: all 400ms ease-in-out;
+    
+                &:hover {
+                    border: 1px solid #70E61C;
+                    background-color: #9747FF;
+                    -webkit-transform: scale(1.25);
+                    -moz-transform: scale(1.25);
+                    -ms-transform: scale(1.25);
+                    -o-transform: scale(1.25);
+                    transform: scale(1.25);
+                }
             }
 
         }
@@ -133,21 +146,21 @@
 
     span {
         position: absolute;
-        top: 4720px;
-        right: 200px; 
+        top: 4945px;
+        right: 250px;
         color: #FFFFFF;
         font-size: 57px;
         font-weight: lighter;
         z-index: 10;
         cursor: pointer;
-
     }
 
     .purple-shadow-fot {
         position: absolute;
-        top: 4394px;
+        top: 4650px;
         right: 0;
         width: 615px;
-        z-index: 1;
+        height: 546px;
+        object-fit: cover;
     }
 }
