@@ -8,12 +8,13 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
-  { path: '', component: MainSideComponent },
-  { path: '', component: AboutMeComponent },
-  { path: '', component: SkillsComponent },
-  { path: '', component: PortfolioComponent },
-  { path: '', component: ContactComponent },
-  { path: '', component: FooterComponent },
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: 'main', component: MainSideComponent },
+  { path: 'about', component: AboutMeComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: '**', component: ContactComponent },
+  { path: '**', component: FooterComponent },
 ];
 
 @NgModule({
