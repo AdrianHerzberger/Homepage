@@ -27,4 +27,11 @@ export class MainSideComponent implements OnInit {
       skills.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  scrollToPortfolio() {
+    const skills = document.getElementById("portfolio");
+    if (skills) {
+      skills.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
