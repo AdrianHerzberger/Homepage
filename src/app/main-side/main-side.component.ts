@@ -1,27 +1,30 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-side',
   templateUrl: './main-side.component.html',
   styleUrls: ['./main-side.component.scss']
 })
-export class MainSideComponent implements AfterViewInit {
-  @ViewChild('about', { read: ElementRef })
-  aboutComponent!: ElementRef;
+export class MainSideComponent implements OnInit {
+  constructor(private scroller: ViewportScroller, private router: Router) {}
 
-  constructor(private el: ElementRef) {}
-
-  ngAfterViewInit(): void {
-    this.el.nativeElement.scrollTo({
-      behavior: 'smooth',
-      top: 0
-    });
+  ngOnInit() {
+    this.router.navigate(["/"]);
   }
 
   scrollToAbout() {
-    this.el.nativeElement.scrollTo({
-      behavior: 'smooth',
-      top: this.aboutComponent.nativeElement.offsetTop
-    });
+    const about = document.getElementById("aboutMe");
+    if (about) {
+      about.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToSkills() {
+    const skills = document.getElementById("skills");
+    if (skills) {
+      skills.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
